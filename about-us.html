@@ -89,8 +89,20 @@
             </div>
           </div>
           <div class="row mb-45">
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
               <img src="assets/images/about-banner.png" class="w-100"/>
+            </div> -->
+            <div class="col-md-12 aboutBannerBlock">
+              <div class="options">
+                <div class="option " style="--optionBackground:url(assets/images/Untitled-16\ \(2\).png);">
+                </div>
+                <div class="option  d-none d-md-block" style="--optionBackground:url(assets/images/Untitled-16\ \(2\).png);">
+                </div>
+                <div class="option active" style="--optionBackground:url(assets/images/Untitled-16\ \(2\).png);">
+                </div>
+                <div class="option" style="--optionBackground:url(assets/images/Untitled-16\ \(2\).png);">
+                </div>
+             </div>
             </div>
           </div>
 
@@ -98,7 +110,7 @@
 
 
 
-          <div class="row subAboutContainer">
+          <div class="row secondContainer">
             <div class="col-md-12">
               <p>Our business began on 1st April 1968 with the launch of our flagship title, Garavi Gujarat, in the UK. Today, AMG is a diversified media house, publishing some of the country’s most iconic and trusted Asian media brands and hosting leading events.</p><p>​Operating in the UK, US, and India, our reach extends across the globe. Our websites attract over a million unique visitors monthly, and our business and consumer publications reach over 1.3 million readers monthly.</p>
             </div>
@@ -107,7 +119,7 @@
       </section>
       <section class="our-history">
         <div class="container">
-          <div class="row subAboutContainer">
+          <div class="row   secondContainer">
             <div class="col-md-12">
               <h2 class="text-center mb-65">Our History</h2>
               <p>Our beginnings may have been humble, but the ambitions of our founder, Mr Ramniklal Solanki CBE, were both noble and audacious. The audacity of the group’s founder Ramniklal Solanki was to start a Gujarati newspaper with no start-up capital when there were few Indians in the UK and the technology to produce such a paper did not exist in the country.</p><p>​Mr Solanki had collected some advance subscriptions to fund his new journalistic enterprise. From those difficult early beginnings when the paper was produced on a Gujarati typewriter, Mr Solanki travelled across Britain, going from town to city, knocking on doors and selling subscriptions.</p><p>​A journalist to the core, Ramniklal Solanki had come to Britain as a foreign correspondent for a group of Indian newspapers some four years before the launch of Garavi Gujarat.</p>
@@ -209,13 +221,13 @@
             </div>
           </div>
           <div class="row subAboutContainer">
-            <div class="col-md-6">
+            <div class="col-md-6 ">
               <div class="upComingEvents-card">
                 <div class="cardContainer">
-                  <img src="assets/images/Untitled-16 (2).png" alt="Avatar" class="image h-100 w-100">
+                  <img src="assets/images/Untitled-16 (2).png" alt="Avatar" class="image h-100 w-100 object-fit-cover">
                   <div class="overlay ">
-                    <div class="text">
-                      <img src="assets/images/logowhite.png" class="mb-65"/>
+                    <div class="text d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/images/logowhite.png" class="mb-65 "/>
                       <h3 class="text-center">The Eastern Eye Property Awards 2024</h3>
                     </div>
                   </div>
@@ -223,15 +235,15 @@
                 <img src="" alt="">
                 <div class="cardContent d-flex  justify-content-between mb-40">
                   <div><h6>06 Feb 2024 </h6><h6> 17:00 – 23:00 GMT</h6></div>
-                  <div><p>London, Whitehall,</p><p> London SW1A 2EU, UK</p></div>
+                  <div  class="places"><p>London, Whitehall,</p><p> London SW1A 2EU, UK</p></div>
                 </div>
                 <a><button class="btn-blue">View more Details</button></a>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-none d-md-block">
               <div class="upComingEvents-card">
                 <div class="cardContainer">
-                  <img src="assets/images/Untitled-16 (2).png" alt="Avatar" class="image h-100 w-100">
+                  <img src="assets/images/Untitled-16 (2).png" alt="Avatar" class="image h-100 w-100 object-fit-cover">
                   <div class="overlay ">
                     <div class="text">
                       <img src="assets/images/logowhite.png" class="mb-65"/>
@@ -242,7 +254,7 @@
                 <img src="" alt="">
                 <div class="cardContent d-flex  justify-content-between mb-40">
                   <div><h6>06 Feb 2024 </h6><h6> 17:00 – 23:00 GMT</h6></div>
-                  <div><p>London, Whitehall,</p><p> London SW1A 2EU, UK</p></div>
+                  <div class="places"><p>London, Whitehall,</p><p> London SW1A 2EU, UK</p></div>
                 </div>
                 <a><button class="btn-blue">View more Details</button></a>
               </div>
@@ -327,6 +339,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="slider.js"></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function(){
             document.querySelectorAll('.dropdown-menu').forEach(function(element){
@@ -351,12 +364,11 @@
             responsive: [{
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 4
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 3
+                    slidesToShow: 1.5,
+                    arrows:false,
+                    centerMode: true,
+                    centerPadding: '20%',
+                    // infinite: false,
                 }
             }]
         });
